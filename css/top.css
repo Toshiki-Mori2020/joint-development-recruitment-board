@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post_container {
+    padding: 0.5em 1em;
+    margin: 50px;
+    font-weight: bold;
+    border: solid 3px #000000;
+    width:460px;
+}
+
+.post_box {
+    padding: 60px;
+    margin: 2em auto;
+    font-weight: bold;
+    border: solid 3px #000000;
+    width:300px;
+}
+
+.post_box h1 {
+    text-align: center;
+}
+
+.post_detail {
+  margin-left: 100px;
+}
+
+.post_contents {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.post_button {
+  margin: 45px 10px;
+}
+
+.post_count {
+  margin: 10px;
+}
+
+.post_count p{
+  text-align: center;
+}
+
+.count_box{
+  padding: 0.5em 1em;
+    margin: 0;
+    font-weight: bold;
+    border: solid 3px #000000;
+}
