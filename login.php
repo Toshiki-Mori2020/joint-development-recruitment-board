@@ -11,10 +11,12 @@
 <body>
     <div class="wrapper">
         <div class="title">
-            <h1>マイページ</h1>
+            <h1>ログインページ</h1>
         </div>
         <div class="login_content">
-
+            <p>メールアドレス:<input type="text" name="mail"></p>
+            <p>パスワード:<input type="text" name="password"></p>
+            <input type="submit" value="ログイン" name="submit" id="login_button_detail">
         </div>
 
 
