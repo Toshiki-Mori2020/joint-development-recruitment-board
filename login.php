@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>マイページ</h1>
+        </div>
+        <div class="login_content">
+
+        </div>
+
+
+    </div>
 
 </body>
 
