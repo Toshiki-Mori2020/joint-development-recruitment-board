@@ -3,4 +3,10 @@
 .title h1{
   text-align: center;
   margin: 50px;
+  font-size: 50px;
+}
+
+.login_content {
+    border: solid 3px #000000;
+    margin: 0 auto;
 }
