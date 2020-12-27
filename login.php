@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>共同開発募集.com</title>
-
+    <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>

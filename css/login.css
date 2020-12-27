@@ -8,5 +8,6 @@
 
 .login_content {
     border: solid 3px #000000;
-    margin: 0 auto;
+    margin: 50px auto;
+    width:500px;
 }
