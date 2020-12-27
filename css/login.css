@@ -8,6 +8,19 @@
 
 .login_content {
     border: solid 3px #000000;
-    margin: 50px auto;
+    margin: 0 auto;
     width:500px;
+    padding:30px;
+}
+
+.login_content p {
+  margin:20px 0;
+}
+
+#login_button_detail {
+  margin: 10px 200px;
+}
+
+#password_box{
+  width: 180px;
 }

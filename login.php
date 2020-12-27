@@ -16,7 +16,7 @@
         </div>
         <div class="login_content">
             <p>メールアドレス:<input type="text" name="mail"></p>
-            <p>パスワード:<input type="text" name="password"></p>
+            <p>パスワード:<input type="text" name="password" id="password_box"></p>
             <input type="submit" value="ログイン" name="submit" id="login_button_detail">
         </div>
 
