@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title h1{
+  text-align: center;
+  margin: 50px 700px;
+  font-size: 50px;
+}
+
+.profile {
+    border: solid 3px #000000;
+    margin: 20px 350px;
+    width:900px;
+    padding:30px;
+}
+
+.profile p {
+  margin:20px 20px;
+  font-size: 20px;
+}
+
+#member-register_button_detail {
+  margin: 20px 370px;
+}
+
+#name {
+  width: 600px;
+}
+
+#nickname {
+  width: 520px;
+}
+
+#language {
+  width: 528px;
+}
+
+#mail {
+  width: 500px;
+}
+
+#password {
+  width: 540px;
+}
+
+.red {
+  border: solid 1px #000000;
+  padding: 2px;
+  margin-left: 15px;
+  color: red;
+  font-size: 18px;
+}
