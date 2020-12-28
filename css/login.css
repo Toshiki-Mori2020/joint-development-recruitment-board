@@ -14,7 +14,8 @@
 }
 
 .login_content p {
-  margin:20px 0;
+  margin:20px 20px;
+  font-size: 20px;
 }
 
 #login_button_detail {

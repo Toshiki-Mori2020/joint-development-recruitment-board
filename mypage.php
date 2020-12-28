@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>共同開発募集.com</title>
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <link rel="stylesheet" type="text/css" href="mypage.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/mypage.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -29,9 +29,10 @@
             </div>
 
             <div class="recruited_Projects">
+                <h1>募集した案件</h1>
                 <div class="post_container">
                     <div class="post_box">
-                        <h1>作成内容</h1>
+                        <h2>作成内容</h2>
                     </div>
                     <p class="post_detail">・フロント1名　バック2名</p>
                     <p class="post_detail">・使用予定の言語JS HTML CSS PHP</p>
@@ -52,9 +53,10 @@
             </div>
 
             <div class="applied_Projects">
+                <h1>応募した案件</h1>
                 <div class="post_container">
                     <div class="post_box">
-                        <h1>作成内容</h1>
+                        <h2>作成内容</h2>
                     </div>
                     <p class="post_detail">・フロント1名　バック2名</p>
                     <p class="post_detail">・使用予定の言語JS HTML CSS PHP</p>
