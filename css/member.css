@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .title h1{
   text-align: center;
-  margin: 50px 700px;
   font-size: 50px;
 }
 
@@ -53,4 +47,14 @@
   margin-left: 15px;
   color: red;
   font-size: 18px;
+}
+
+.member_button {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.member_register_button{
+  margin: 0 50px;
 }
