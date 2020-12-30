@@ -26,8 +26,8 @@
                 <p>メールアドレス:</p>
                 <p>パスワード:</p>
                 <div class="member_button">
-                    <input type="submit" value="修正画面" name="submit" class="member_register_button">
                     <input type="submit" value="登録" name="submit" class="member_register_button">
+                    <input type="submit" value="修正画面" name="submit" class="member_register_button">
                 </div>
             </div>
         </div>

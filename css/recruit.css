@@ -12,36 +12,32 @@
   font-size: 20px;
 }
 
-#member-register_button_detail {
+#recruit-register_button_detail {
   margin: 20px 370px;
 }
 
-#name {
+#create_details {
   width: 600px;
 }
 
-#nickname {
-  width: 520px;
+#recruit {
+  width: 600px;
 }
 
-#language {
-  width: 528px;
+#use_language {
+  width: 560px;
 }
 
-#mail {
-  width: 500px;
+#few_words {
+  width: 600px;
 }
 
-#password {
-  width: 540px;
-}
-
-.member_button {
+.recruit_button {
   display: flex;
   justify-content: center;
   margin: 15px;
 }
 
-.member_register_button{
+.recruit_register_button{
   margin: 0 50px;
 }
