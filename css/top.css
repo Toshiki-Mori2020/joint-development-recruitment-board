@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .post_container {
     padding: 0.5em 1em;
     margin: 50px;
