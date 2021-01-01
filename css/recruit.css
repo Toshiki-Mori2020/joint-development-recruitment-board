@@ -41,3 +41,45 @@
 .recruit_register_button{
   margin: 0 50px;
 }
+
+.post_box h2 {
+    text-align: center;
+}
+
+.recruit_container {
+    border: solid 3px #000000;
+    margin: 20px 350px;
+    width:900px;
+    padding:30px;
+}
+
+.recruit_container p {
+  margin:20px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.post_box {
+    padding: 60px;
+    margin: 2em auto;
+    font-weight: bold;
+    border: solid 3px #000000;
+    width:800px;
+}
+
+.post_box h1 {
+    text-align: center;
+}
+
+.message p {
+  width: 1080px;
+  margin: 40px 300px;
+}
+
+.message_input_column {
+  margin:40px 500px;
+}
+
+.message_input_column input{
+  margin: 40px 250px;
+}
