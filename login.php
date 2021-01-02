@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include("header.php"); ?>
     <div class="wrapper">
         <div class="title">
             <h1>ログインページ</h1>
@@ -19,10 +20,8 @@
             <p>パスワード:<input type="text" name="password" id="password_box"></p>
             <input type="submit" value="ログイン" name="submit" id="login_button_detail">
         </div>
-
-
     </div>
-
+    <?php include("footer.php"); ?>
 </body>
 
 </html>

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include("header.php"); ?>
     <div class="wrapper">
         <div class="title">
             <h1>募集内容</h1>
@@ -20,11 +21,11 @@
                 <p>募集人数:<input type="text" name="recruit" id="recruit"></p>
                 <p>使いたい言語:<input type="text" name="use_language" id="use_language"></p>
                 <p>ひとこと:<input type="text" name="few_words" id="few_words"></p>
-                <input type="submit" value="確認画面" name="submit" id="member-register_button_detail">
+                <input type="submit" value="確認画面" name="submit" id="recruit_button">
             </div>
         </div>
     </div>
-
+    <?php include("footer.php"); ?>
 </body>
 
 </html>

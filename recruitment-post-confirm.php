@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include("header.php"); ?>
     <div class="wrapper">
         <div class="title">
             <h1>会員登録確認</h1>
@@ -27,6 +28,7 @@
             </div>
         </div>
     </div>
+    <?php include("footer.php"); ?>
 </body>
 
 </html>

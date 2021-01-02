@@ -2,7 +2,7 @@
 
 .profile {
     border: solid 3px #000000;
-    margin: 20px 350px;
+    margin: 20px 45%;
     width:900px;
     padding:30px;
 }
@@ -82,4 +82,8 @@
 
 .message_input_column input{
   margin: 40px 250px;
+}
+
+#recruit_button {
+  margin: 20px 45%;
 }

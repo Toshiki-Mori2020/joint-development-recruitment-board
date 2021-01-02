@@ -76,3 +76,42 @@ body {
   color: red;
   font-size: 18px;
 }
+
+header a{
+	text-decoration: none;
+}
+
+#header-nav {
+  list-style: none;
+	overflow: hidden;
+	float: right;
+}
+
+#header-nav li {
+  width: 200px;
+  text-align: center;
+  background-color: #333;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 2px;
+}
+
+#header-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.header_title {
+	font-size: 40px;
+}
+
+footer{
+	margin: 100px 0 0 auto;
+}
+
+footer a{
+	float: right;
+}

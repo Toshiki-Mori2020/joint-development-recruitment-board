@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <?php include("header.php"); ?>
     <div class="wrapper">
         <div class="post_container">
             <div class="post_box">
@@ -199,8 +200,7 @@
             </div>
         </div>
     </div>
-
-
+    <?php include("footer.php"); ?>
 </body>
 
 </html>

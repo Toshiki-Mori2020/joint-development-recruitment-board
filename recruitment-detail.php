@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include("header.php"); ?>
     <div class="wrapper">
         <div class="member-register_content">
             <div class="recruit_container">
@@ -34,9 +35,8 @@
             <textarea name="comment" rows="6" cols="60"></textarea>
             <input type="submit" value="メッセージの投稿" name="message">
         </div>
-
-
     </div>
+    <?php include("footer.php"); ?>
 </body>
 
 </html>
