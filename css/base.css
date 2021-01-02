@@ -60,7 +60,7 @@ body {
 .wrapper {
   display: flex;
 	flex-wrap: wrap;
-	width: 1680px;
+	width: 100%;
 }
 
 .title h1{
