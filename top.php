@@ -1,3 +1,26 @@
+<?php
+
+try {
+    //データベース名、ユーザー名、パスワード
+    $dsn = 'mysql:dbname=jointdevelopment;host=localhost;charset=utf8mb4';
+    $user = 'root';
+    $password = 'root';
+
+    //データベース接続
+    $pdo = new PDO($dsn, $user, $password);
+    //エラー時のレポート表示
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $contents = $_POST['contens'];
+    $number_of_applicants = $_POST['number_of_applicants'];
+    $language = $_POST['language'];
+    $a_few_words = $_POST['a_few_words'];
+} catch (PDOException $e) {
+    exit('データベースに接続できませんでした。' . $e->getMessage());
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
