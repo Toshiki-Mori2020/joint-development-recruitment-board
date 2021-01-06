@@ -11,7 +11,7 @@ try {
     //エラー時のレポート表示
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $contents = $_POST['contens'];
+    $contents = $_POST['contents'];
     $number_of_applicants = $_POST['number_of_applicants'];
     $language = $_POST['language'];
     $a_few_words = $_POST['a_few_words'];
