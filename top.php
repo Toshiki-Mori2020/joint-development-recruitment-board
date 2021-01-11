@@ -2,6 +2,26 @@
 
 require_once("dbconnect.php");
 
+function mb_wordwrap($str, $width = 50, $break = "\n")
+{
+    $w = mb_strwidth($str, "eucJP-win");
+    $arr = array();
+    if ($w < $width) {
+        return $str;
+    }
+    while ($w > $width) {
+        $trimStr = mb_strimwidth($str, 0, $width, "", "eucJP-win");
+        $arr[] = $trimStr;
+        $str = preg_replace("/^$trimStr/", "", $str);
+        $w = mb_strwidth($str, "eucJP-win");
+    }
+    $arr[] = $str;
+    return implode($break, $arr);
+}
+
+
+$str = $row['a_few_words'];
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +44,9 @@ require_once("dbconnect.php");
                 </div>
                 <p class="post_detail"><?php echo "募集人数：" . "{$row['number_of_applicants']}" . "名" ?></p>
                 <p class="post_detail"><?php echo "使いたい言語：" . "{$row['language']}" ?></p>
-                <p class="post_detail"><?php echo "ひとこと：" . "{$row['a_few_words']}" ?></p>
+                <p class="post_detail">-------------------------------------</p>
+                <p class="post_detail"><?php echo "ひとこと：" . mb_wordwrap($str, 7, '<br />'); ?></p>
+                <p class="post_detail">-------------------------------------</p>
                 <div class="post_contents">
                     <div class="post_button">
                         <input type="submit" value="詳細ページ" name="submit" id="post_button_detail">
