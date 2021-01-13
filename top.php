@@ -2,25 +2,6 @@
 
 require_once("dbconnect.php");
 
-//バイト数の指定から文字数で決める
-
-function mb_wordwrap($str, $width = 14, $break = "\n")
-{
-    $w = mb_strwidth($str, "UTF-8");
-    $arr = array();
-    if ($w < $width) {
-        return $str;
-    }
-    while ($w > $width) {
-        $trimStr = mb_strimwidth($str, 0, $width, "", "UTF-8");
-        $arr[] = $trimStr;
-        $str = preg_replace("/^$trimStr/", "", $str);
-        $w = mb_strwidth($str, "UTF-8");
-    }
-    $arr[] = $str;
-    return implode($break, $arr);
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -41,11 +22,10 @@ function mb_wordwrap($str, $width = 14, $break = "\n")
                 <div class="post_box">
                     <h1><?php echo "{$row['contents']}" ?></h1>
                 </div>
-                <p class="post_detail"><?php echo "募集人数：" . "{$row['number_of_applicants']}" . "名" ?></p>
+                <div class="post_detail"><?php echo "募集人数：" . "{$row['number_of_applicants']}" . "名" ?></div>
                 <p class="post_detail"><?php echo "使いたい言語：" . "{$row['language']}" ?></p>
                 <p class="post_detail">-------------------------------------</p>
-                <?php $str = $row['a_few_words']; ?>
-                <p class="post_detail"><?php echo "ひとこと：" . mb_wordwrap($str, 14, '<br />'); ?></p>
+                <div class="a_few_words_detail"><?php echo "ひとこと<br>" . "{$row['a_few_words']}" ?></div>
                 <p class="post_detail">-------------------------------------</p>
                 <div class="post_contents">
                     <div class="post_button">

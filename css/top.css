@@ -3,7 +3,6 @@
 .post_container {
     padding: 0.5em 1em;
     margin: 50px;
-    font-weight: bold;
     border: solid 3px #000000;
     width:460px;
 }
@@ -11,7 +10,6 @@
 .post_box {
     padding: 60px;
     margin: 2em auto;
-    font-weight: bold;
     border: solid 3px #000000;
     width:300px;
 }
@@ -22,6 +20,11 @@
 
 .post_detail {
   margin-left: 100px;
+}
+
+.a_few_words_detail{
+  margin-left: 100px;
+  width:220px;
 }
 
 .post_contents {
