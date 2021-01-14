@@ -2,7 +2,7 @@
 
 require_once("dbconnect.php");
 
-dbh = new PDO($DSN, $DBUSER, $DBPASS);
+$dbh = new PDO($dsn, $user, $password);
 $dbh->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
 $sql = 'SELECT * FROM apply ';
 $stmt = $dbh->query($sql);
