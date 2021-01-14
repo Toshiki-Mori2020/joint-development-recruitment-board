@@ -2,6 +2,13 @@
 
 require_once("dbconnect.php");
 
+$sql = 'SELECT * FROM apply ';
+$stmt = $dbh->query($sql);
+$stmt->execute();
+$count = $stmt->rowCount();
+
+echo $count;
+
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +36,7 @@ require_once("dbconnect.php");
                 <p class="post_detail">-------------------------------------</p>
                 <div class="post_contents">
                     <div class="post_button">
-                        <input type="submit" value="詳細ページ" name="submit" id="post_button_detail">
+                        <button type="button" onclick="location.href='recruitment-detail.php'" id="post_button_detail">詳細ページ</button>
                     </div>
                     <div class="post_button">
                         <input type="submit" value="応募ボタン" name="submit" id="post_button_detail">
