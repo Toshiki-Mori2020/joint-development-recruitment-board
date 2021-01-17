@@ -9,7 +9,11 @@ $stmt = $dbh->query($sql);
 $stmt->execute();
 $count = $stmt->rowCount();
 
-echo $count;
+if ($_GET['apply_hid'] == "1") {
+    $disabled = "";
+} else {
+    $disabled = "disabled";
+}
 
 ?>
 
@@ -41,11 +45,12 @@ echo $count;
                         <button type="button" onclick="location.href='recruitment-detail.php'" id="post_button_detail">詳細ページ</button>
                     </div>
                     <div class="post_button">
-                        <input type="submit" value="応募ボタン" name="submit" id="post_button_detail">
+                        <input type="submit" value="応募ボタン" name="apply_button" id="post_button_detail" <?php $disabled ?>>
+                        <input type="hidden" name="apply_hid" value="1">
                     </div>
                     <div class="post_count">
                         <p>応募数</p>
-                        <p class="count_box">1</p>
+                        <p class="count_box"><?PHP echo $count; ?></p>
                     </div>
                 </div>
             </div>
