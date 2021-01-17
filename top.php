@@ -45,8 +45,8 @@ if ($_GET['apply_hid'] == "1") {
                         <button type="button" onclick="location.href='recruitment-detail.php'" id="post_button_detail">詳細ページ</button>
                     </div>
                     <div class="post_button">
-                        <input type="submit" value="応募ボタン" name="apply_button" id="post_button_detail" <?php $disabled ?>>
                         <input type="hidden" name="apply_hid" value="1">
+                        <input type="submit" value="応募ボタン" name="apply_button" id="post_button_detail" <?php $disabled ?>>
                     </div>
                     <div class="post_count">
                         <p>応募数</p>
