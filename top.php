@@ -23,7 +23,7 @@ if (!empty($_POST['apply_hid'])) {
         $stmt = $dbh->prepare($sql);
 
         $stmt->bindParam(1, $_POST['member_id'], PDO::PARAM_INT);
-        $stmt->bindParam(1, $_POST['recruitment_id'], PDO::PARAM_INT);
+        $stmt->bindParam(2, $_POST['recruitment_id'], PDO::PARAM_INT);
         $stmt->execute();
 
         header('location: http://localhost/portfolio/joint-development-recruitment-board/top.php');
