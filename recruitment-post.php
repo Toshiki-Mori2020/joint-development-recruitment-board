@@ -20,7 +20,7 @@
                 <p>作成内容:<input type="text" name="create_details" id="create_details"></p>
                 <p>募集人数:<input type="text" name="recruit" id="recruit"></p>
                 <p>使いたい言語:<input type="text" name="use_language" id="use_language"></p>
-                <textarea>ひとこと:<input type="text" name="few_words" id="few_words"></textarea>
+                <p>ひとこと</p><textarea name="few_words" id="few_words" rows="4" cols="40"></textarea>
                 <input type="submit" value="確認画面" name="submit" id="recruit_button">
             </div>
         </div>
