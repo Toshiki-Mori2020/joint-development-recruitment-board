@@ -9,7 +9,7 @@ $stmt = $dbh->query($sql);
 $stmt->execute();
 $count = $stmt->rowCount();
 
-if (isset($_GET['apply_hid']) == "1") {
+if (isset($_GET['apply_hid']) && $_GET['apply_hid'] == "1") {
     $disabled = "";
 } else {
     $disabled = "disabled";
@@ -65,7 +65,7 @@ if (!empty($_POST['apply_hid'])) {
                     <div class="post_button">
                         <form action="top.php" method="POST">
                             <input type="hidden" name="apply_hid" value="1">
-                            <input type="hidden" name="recruitment_id">
+                            <input type="hidden" name="recruitment_id" value=<?php echo "{$row['recruitment_id']}" ?>>
                             <input type="submit" value="応募ボタン" name="apply_button" id="post_button_detail" <?php $disabled ?>>
                         </form>
                     </div>
