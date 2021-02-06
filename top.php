@@ -82,11 +82,3 @@ if (!empty($_POST['apply_hid'])) {
 </body>
 
 </html>
-
-
-<div class="button" style="display:inline-block">
-    <a href="https://tan-taka.com/diver/contact" style="color:#F8FFF8;background:#3CA44F;"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-</div>
-<div class="button" style="display:inline-block">
-    <a href="https://tan-taka.com/diver/" style="color:#F8FFF8;background:#3CA44F;">お問い合わせ<br>043-309-8529</a>
-</div>
